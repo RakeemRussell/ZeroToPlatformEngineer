@@ -1,0 +1,98 @@
+# ---- Personal study guide (keep local) ----
+GUIDE.md
+guide.md
+
+# ---- Secrets and credentials (never push) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.ppk
+.aws/
+credentials
+secrets.*
+*.secret
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+.vault-token
+
+# ---- Terraform ----
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+tfplan
+*.tfplan
+# Keep the lock file committed: .terraform.lock.hcl
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm/
+
+# ---- Docker / Kubernetes local files ----
+docker-compose.override.yml
+compose.override.yaml
+kubeconfig
+*.kubeconfig
+.kube/
+
+# ---- Logs, temp, backups ----
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# ---- VM / disk images (VirtualBox) ----
+*.vdi
+*.vmdk
+*.vhd
+*.vbox-prev
+*.ova
+*.iso
+VirtualBox VMs/
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.sublime-workspace
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
